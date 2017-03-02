@@ -1,0 +1,14 @@
+// Simple1 - Hello world
+///////
+// task hello {
+//    doLast {
+//       println 'tutorialspoint'
+//    }
+// }
+////////
+
+// Simple2 - dolast can be replaced with << instead. both have same
+/////
+task hello << {
+      println 'tutorialspoint'
+}
