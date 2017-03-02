@@ -1,0 +1,10 @@
+/*
+* iterates over the elements.
+* Example "Marc" string
+*/
+task groovyJDK << {
+   String myName = "Marc";
+   myName.each() { 
+      println "${it}" 
+   };
+}

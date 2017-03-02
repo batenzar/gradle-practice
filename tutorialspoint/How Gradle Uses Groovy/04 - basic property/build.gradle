@@ -1,0 +1,32 @@
+task gradlesyntax << {
+  //////
+  //Property Accessors
+  //////
+  // Using a getter method
+  println project.buildDir
+  println getProject().getBuildDir()
+  
+  // Using a setter method
+  project.buildDir = 'target'
+  getProject().setBuildDir('target')
+  
+  //////
+  //Optional Parentheses on Method Calls
+  //////
+  getProject().setBuildDir('target1')
+  println project.buildDir
+  // or
+  getProject().setBuildDir 'target2' 
+  println project.buildDir  
+  
+  //////
+  //Closure as the Last Parameter of the Method
+  //////
+  repositories {
+     println "in a closure1"
+  }
+  repositories() { 
+     println "in a closure2" 
+  }
+  repositories({ println "in a closure3" })
+}

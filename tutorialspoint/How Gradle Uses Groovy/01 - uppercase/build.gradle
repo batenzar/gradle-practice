@@ -1,0 +1,5 @@
+task upper << {
+   String expString = 'TUTORIALS point'
+   println "Original: " + expString
+   println "Upper case: " + expString.toUpperCase()
+}
